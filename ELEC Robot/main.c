@@ -44,60 +44,31 @@ int main(int argc, char *argv[]) {
     insertAndSetFirstWall(&head, 11,  OVERALL_WINDOW_WIDTH/2+100, OVERALL_WINDOW_HEIGHT/2+200, OVERALL_WINDOW_WIDTH/2-100, 10);
     insertAndSetFirstWall(&head, 12,  OVERALL_WINDOW_WIDTH/2+200, OVERALL_WINDOW_HEIGHT/2+100, OVERALL_WINDOW_WIDTH/2-100, 10);*/
 
-    // maze construction
-    /*
-    insertAndSetFirstWall(&head, 1, 0, OVERALL_WINDOW_HEIGHT-10, OVERALL_WINDOW_WIDTH, 10);
-    insertAndSetFirstWall(&head, 2, 0, OVERALL_WINDOW_HEIGHT-90, OVERALL_WINDOW_WIDTH/2-80, 10);
-    insertAndSetFirstWall(&head, 3, OVERALL_WINDOW_WIDTH/2-90, 160, 10, 240);
-    insertAndSetFirstWall(&head, 4, OVERALL_WINDOW_WIDTH/2-10, 80, 10, OVERALL_WINDOW_HEIGHT-90);
-    insertAndSetFirstWall(&head, 5, 0, 0, OVERALL_WINDOW_WIDTH, 10);
-    insertAndSetFirstWall(&head, 6, 0, 0, 10, 160);
-    insertAndSetFirstWall(&head, 7, 0, 160, OVERALL_WINDOW_WIDTH/2-80, 10);
-    insertAndSetFirstWall(&head, 8, 80, 80, OVERALL_WINDOW_WIDTH-160, 10);
-    insertAndSetFirstWall(&head, 9, 80, 80, OVERALL_WINDOW_WIDTH-160, 10);
-    insertAndSetFirstWall(&head, 10, OVERALL_WINDOW_WIDTH-10, 0, 10, OVERALL_WINDOW_HEIGHT-80);
-    insertAndSetFirstWall(&head, 11, 80, 80, OVERALL_WINDOW_WIDTH-160, 10);
-    insertAndSetFirstWall(&head, 12, OVERALL_WINDOW_WIDTH-90, 80, 10, 240);
-    insertAndSetFirstWall(&head, 13, OVERALL_WINDOW_WIDTH-170, 80, 10, 240);
-    insertAndSetFirstWall(&head, 14, OVERALL_WINDOW_WIDTH-170, 320, 90, 10);
-    insertAndSetFirstWall(&head, 15, OVERALL_WINDOW_WIDTH-250, 160, 10, 240);
-    insertAndSetFirstWall(&head, 16, OVERALL_WINDOW_WIDTH-250, OVERALL_WINDOW_HEIGHT-90, 250, 10);*/
-
-    // maze construction
-    insertAndSetFirstWall(&head, 1,  OVERALL_WINDOW_WIDTH/2-300, OVERALL_WINDOW_HEIGHT/2-200, 5, OVERALL_WINDOW_HEIGHT/2+165);
-    insertAndSetFirstWall(&head, 2,  OVERALL_WINDOW_WIDTH/2-300, OVERALL_WINDOW_HEIGHT/2-200, 600, 5);
-    insertAndSetFirstWall(&head, 3,  OVERALL_WINDOW_WIDTH/2+300, OVERALL_WINDOW_HEIGHT/2-200, 5, OVERALL_WINDOW_HEIGHT/2-100);
-    insertAndSetFirstWall(&head, 4,  OVERALL_WINDOW_WIDTH/2-300, OVERALL_WINDOW_HEIGHT/2+200, 605, 5);
-    insertAndSetFirstWall(&head, 5,  OVERALL_WINDOW_WIDTH/3-140, OVERALL_WINDOW_HEIGHT/2-150, 5, OVERALL_WINDOW_HEIGHT/2-50);
-    insertAndSetFirstWall(&head, 6,  OVERALL_WINDOW_WIDTH/3-140, OVERALL_WINDOW_HEIGHT/2, 50, 5);
-    insertAndSetFirstWall(&head, 7,  OVERALL_WINDOW_WIDTH/3-90, OVERALL_WINDOW_HEIGHT/2, 5, OVERALL_WINDOW_HEIGHT/2-150);
-    insertAndSetFirstWall(&head, 8,  OVERALL_WINDOW_WIDTH/3-135, OVERALL_WINDOW_HEIGHT/2+90, 50, 5);
-    insertAndSetFirstWall(&head, 9,  OVERALL_WINDOW_WIDTH/3-140, OVERALL_WINDOW_HEIGHT/2+90, 5, OVERALL_WINDOW_HEIGHT/2-125);
-    insertAndSetFirstWall(&head, 10,  OVERALL_WINDOW_WIDTH/3-140, OVERALL_WINDOW_HEIGHT/2-100, 190, 5);
-    insertAndSetFirstWall(&head, 11,  OVERALL_WINDOW_WIDTH/3-80, OVERALL_WINDOW_HEIGHT/2-200, 5, OVERALL_WINDOW_HEIGHT/2-185);
-    insertAndSetFirstWall(&head, 12,  OVERALL_WINDOW_WIDTH/3-25, OVERALL_WINDOW_HEIGHT/2-155, 5, OVERALL_WINDOW_HEIGHT/2-185);
-    insertAndSetFirstWall(&head, 13,  OVERALL_WINDOW_WIDTH/3+40, OVERALL_WINDOW_HEIGHT/2-150, 320, 5);
-    insertAndSetFirstWall(&head, 14,  OVERALL_WINDOW_WIDTH/3+355, OVERALL_WINDOW_HEIGHT/2-150, 5, OVERALL_WINDOW_HEIGHT/2-185);
-    insertAndSetFirstWall(&head, 15,  OVERALL_WINDOW_WIDTH/3+360, OVERALL_WINDOW_HEIGHT/2-60, 52, 5);
-    insertAndSetFirstWall(&head, 16,  OVERALL_WINDOW_WIDTH/3+355, OVERALL_WINDOW_HEIGHT/2-60, 5, OVERALL_WINDOW_HEIGHT/2-140);
-    insertAndSetFirstWall(&head, 17,  OVERALL_WINDOW_WIDTH/3+100, OVERALL_WINDOW_HEIGHT/2-150, 5, OVERALL_WINDOW_HEIGHT/2-140);
-    insertAndSetFirstWall(&head, 18,  OVERALL_WINDOW_WIDTH/3-80, OVERALL_WINDOW_HEIGHT/2-50, 185, 5);
-    insertAndSetFirstWall(&head, 19,  OVERALL_WINDOW_WIDTH/3-25, OVERALL_WINDOW_HEIGHT/2-50, 5, OVERALL_WINDOW_HEIGHT/2-50);
-    insertAndSetFirstWall(&head, 20,  OVERALL_WINDOW_WIDTH/3-80, OVERALL_WINDOW_HEIGHT/2+140, 60, 5);
-    insertAndSetFirstWall(&head, 21,  OVERALL_WINDOW_WIDTH/3-20, OVERALL_WINDOW_HEIGHT/2+90, 50, 5);
-    insertAndSetFirstWall(&head, 22,  OVERALL_WINDOW_WIDTH/3+30, OVERALL_WINDOW_HEIGHT/2+40, 5, OVERALL_WINDOW_HEIGHT/2-185);
-    insertAndSetFirstWall(&head, 23,  OVERALL_WINDOW_WIDTH/3+30, OVERALL_WINDOW_HEIGHT/2+40, 330, 5);
-    insertAndSetFirstWall(&head, 24,  OVERALL_WINDOW_WIDTH/3+355, OVERALL_WINDOW_HEIGHT/2-60, 5, OVERALL_WINDOW_HEIGHT/2-140);
-    insertAndSetFirstWall(&head, 25,  OVERALL_WINDOW_WIDTH/3, OVERALL_WINDOW_HEIGHT/2-50, 310, 5);
-    insertAndSetFirstWall(&head, 26,  OVERALL_WINDOW_WIDTH/3+310, OVERALL_WINDOW_HEIGHT/2-100, 5, OVERALL_WINDOW_HEIGHT/2-140);
-    insertAndSetFirstWall(&head, 27,  OVERALL_WINDOW_WIDTH/3+150, OVERALL_WINDOW_HEIGHT/2-110, 5, OVERALL_WINDOW_HEIGHT/2-215);
-    insertAndSetFirstWall(&head, 28,  OVERALL_WINDOW_WIDTH/3+150, OVERALL_WINDOW_HEIGHT/2-110, 120, 5);
-    insertAndSetFirstWall(&head, 29,  OVERALL_WINDOW_WIDTH/3+270, OVERALL_WINDOW_HEIGHT/2-110, 5, OVERALL_WINDOW_HEIGHT/2-215);
-    insertAndSetFirstWall(&head, 30,  OVERALL_WINDOW_WIDTH/3+150, OVERALL_WINDOW_HEIGHT/2-90, 125, 5);
-    insertAndSetFirstWall(&head, 31,  OVERALL_WINDOW_WIDTH/3+40, OVERALL_WINDOW_HEIGHT/2, 275, 5);
-    insertAndSetFirstWall(&head, 32,  OVERALL_WINDOW_WIDTH/2+300, OVERALL_WINDOW_HEIGHT/2-200, 5, OVERALL_WINDOW_HEIGHT/2-100);
-
-
+    insertAndSetFirstWall(&head, 1, 1, 730, 644, 5);
+    insertAndSetFirstWall(&head, 2, 1, 1, 5, 640);
+    insertAndSetFirstWall(&head, 3, 1, 640, 230, 5);
+    insertAndSetFirstWall(&head, 4, 320, 640, 5, 90);
+    insertAndSetFirstWall(&head, 5, 320, 640, 230, 5);  // modi
+    insertAndSetFirstWall(&head, 6, 550, 640, 5, 90);
+    insertAndSetFirstWall(&head, 7, 640, 100, 5, 630);
+    insertAndSetFirstWall(&head, 8, 6, 1, 645, 5);
+    insertAndSetFirstWall(&head, 9, 150, 415, 5, 120);  // modi
+    insertAndSetFirstWall(&head, 10, 95, 530, 355, 5);
+    insertAndSetFirstWall(&head, 11, 260, 310, 5, 220); // modi
+    insertAndSetFirstWall(&head, 12, 445, 415, 5,130);
+    insertAndSetFirstWall(&head, 13, 450, 415, 90,5);
+    insertAndSetFirstWall(&head, 14, 540, 415, 5,120);
+    insertAndSetFirstWall(&head, 15, 540, 530, 100,5);
+    insertAndSetFirstWall(&head, 16, 1, 310, 210,5);
+    insertAndSetFirstWall(&head, 17, 206, 200, 5,280);  // modi
+    insertAndSetFirstWall(&head, 18, 260, 310, 190, 5);  // modi
+    insertAndSetFirstWall(&head, 19, 445, 200, 5,115);
+    insertAndSetFirstWall(&head, 20, 540, 100, 5,210);
+    insertAndSetFirstWall(&head, 21, 540, 310, 100,5);
+    insertAndSetFirstWall(&head, 22, 105, 100, 5,100);
+    insertAndSetFirstWall(&head, 23, 105, 200, 205,5);
+    insertAndSetFirstWall(&head, 24, 215, 6, 5,100);
+    insertAndSetFirstWall(&head, 25, 215, 106, 230,5);
 
     setup_robot(&robot);
     updateAllWalls(head, renderer);
